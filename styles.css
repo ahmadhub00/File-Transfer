@@ -108,3 +108,65 @@ input[type="file"] {
     flex-wrap: wrap;
     margin-bottom: 10px; /* Optional: Adds space between items */
 }
+.file-list li .download-btn {
+    background: #ff641c;
+    color: white;
+    font-size: 1.2em;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+.file-list li .file-name {
+    flex: 1; /* Allows file name to take up available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.file-list h2 {
+    padding: 20px;
+}
+.file-list a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 5px;
+    width: 170px;
+    
+}
+.file-list li a {
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px; /* Adds spacing between file name and button */
+}
+.file-list a:hover {
+    color: #ff3d00;
+}
+.file-list button {
+    background: linear-gradient(45deg, #ff8c00, #ff3d00);
+    padding: 8px 18px;
+    font-size: 1em;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.file-list button:hover {
+    transform: scale(1.05);
+}
+.file-list .download-btn {
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    .upload-area {
+        max-width: 359px;
+    }
+}
